@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohammed's Portfolio</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <link rel="icon" type="" href="Images/MSS 50x50.png">
+        <header>
+        <nav class="sitenavigation" > 
+            <p><a href= "index.html"> Home </a></p>
+            <p><a href= "about-me.html"> Who am I? </a></p>
+            <p><a href= "forms.html"> Found a bug or error? Contact Me! </a></p>
+        </nav>
+        </header>
+        <body> 
+            <table style="width:100%">
+                <tr>
+                  <th>Course Number</th>
+                  <th>Description</th>
+                  <th>Semester Taken/Taking</th>
+                </tr>
+                <tr>
+                  <td>IT 244</td>
+                  <td>INTRODUCTION TO LINUX</td>
+                  <td>Fall 2022</td>
+                </tr>
+                <tr>
+                  <td>IT 246</td>
+                  <td>Intro to Networks</td>
+                  <td>Fall 2022</td>
+                </tr>
+                <tr>
+                  <td>IT 240</td>
+                  <td>Web Design</td>
+                  <td>Fall 2023</td>
+                </tr>
+                <tr>
+                  <td>IT 341</td>
+                  <td>Introduction to System Admin</td>
+                  <td>Spring 2023</td>
+                </tr>
+                <tr>
+                  <td>etc</td>
+                  <td>etc</td>
+                  <td>etc</td>
+                </tr>
+              </table>
+        </body>
+        <div id="placeholder"></div> 
+    <script>
+        document.getElementById("placeholder").innerHTML = new Date(document.lastModified);
+    </script>
+</html>
