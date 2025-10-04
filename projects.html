@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Mohammed Shafkat Saruwar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Images/MSS 50x50.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Shafkat</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="projects-hero">
+        <h1>My Projects</h1>
+        <p>Automation tools, web applications, and system utilities</p>
+    </div>
+
+    <div class="container projects-section">
+        
+        <!-- National Park Matcher -->
+        <div class="project-full" id="npm">
+            <h2>National Park Matcher</h2>
+            <p><strong>Full-stack web application for discovering US National Parks through location-based search and trip planning</strong></p>
+            
+            <div class="tech-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>HTML5/CSS3</span>
+                <span>Jinja2</span>
+                <span>REST APIs</span>
+            </div>
+
+            <h3>Overview</h3>
+            <p>Collaborative capstone project building a Flask-based web application for discovering US National Parks. Users can search 400+ parks by state or activity and get personalized driving directions.</p>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li>Multi-criteria search supporting state-based and activity-based filtering</li>
+                <li>Real-time data integration with National Park Service API</li>
+                <li>Location-based Google Maps directions from user's starting point</li>
+                <li>Dynamic park detail pages with images and descriptions</li>
+                <li>Support for all 50 states and US territories</li>
+            </ul>
+
+            <h3>My Contributions</h3>
+            <p>As the frontend developer, I was responsible for the user interface design and implementation:</p>
+            <ul>
+                <li>Built main landing page with dual search functionality</li>
+                <li>Developed complete CSS styling system for consistent design</li>
+                <li>Created park listing and result pages</li>
+                <li>Collaborated on Flask routing integration</li>
+            </ul>
+
+            <div class="project-links">
+                <a href="https://github.com/shafkatsaruwar/National-Park-Matcher" target="_blank" class="btn btn-primary">View on GitHub</a>
+                <a href="https://maple-scion-f64.notion.site/National-Park-Matcher-27efeb8fc02e811ca5e7cd1df93b49e1" target="_blank" class="btn btn-secondary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Photo Sorter -->
+        <div class="project-full" id="photo">
+            <h2>Photo Sorter</h2>
+            <p><strong>Python CLI tool organizing images by EXIF metadata with automated audit reporting</strong></p>
+            
+            <div class="tech-tags">
+                <span>Python</span>
+                <span>Pillow (PIL)</span>
+                <span>EXIF Parsing</span>
+                <span>CSV</span>
+                <span>CLI</span>
+            </div>
+
+            <h3>Overview</h3>
+            <p>Command-line utility that automatically organizes photos into folders based on their EXIF metadata (date taken, camera model) and generates detailed CSV reports for auditing.</p>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li>Automated sorting by date or camera model</li>
+                <li>EXIF metadata extraction from hundreds of images</li>
+                <li>CSV report generation for quality assurance</li>
+                <li>Batch processing of large photo libraries</li>
+                <li>Graceful error handling for corrupted files</li>
+            </ul>
+
+            <h3>Impact</h3>
+            <p>Reduced manual photo organization time from 30 minutes to under 1 minute, saving approximately 90% of manual effort through automated EXIF parsing and intelligent file organization.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/shafkatsaruwar/photo-sorter" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Payroll Manager -->
+        <div class="project-full" id="payroll">
+            <h2>Payroll Manager for HR</h2>
+            <p><strong>Bash automation system for payroll processing with tax calculations and searchable database</strong></p>
+            
+            <div class="tech-tags">
+                <span>Bash</span>
+                <span>Linux Utilities</span>
+                <span>grep/awk</span>
+                <span>Automation</span>
+            </div>
+
+            <h3>Overview</h3>
+            <p>Interactive command-line tool that automates payroll calculations for HR departments, featuring time tracking, progressive tax calculations, and a searchable employee database.</p>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li>Automated weekly timesheet processing</li>
+                <li>Progressive tax bracket logic (5%-15% based on hours worked)</li>
+                <li>Searchable employee database with fuzzy matching</li>
+                <li>Interactive CLI menu system with input validation</li>
+                <li>Monthly pay projections and tax withholding</li>
+            </ul>
+
+            <h3>Impact</h3>
+            <p>Eliminated manual computation errors and reduced payroll processing time by an estimated 70% through automation of calculations, tax logic, and employee record management.</p>
+
+            <div class="project-links">
+                <a href="https://github.com/shafkatsaruwar/payroll" target="_blank" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mohammed Shafkat Saruwar</p>
+    </footer>
+</body>
+</html>
