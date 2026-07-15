@@ -172,13 +172,15 @@ a {
 .profile-img {
     grid-column: 2;
     grid-row: 1 / span 6;
-    width: min(100%, 430px);
-    aspect-ratio: 4 / 5;
+    width: min(100%, 380px);
+    aspect-ratio: 1;
     justify-self: end;
     object-fit: cover;
     object-position: center top;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 50%;
+    border: 4px solid rgba(247, 147, 30, 0.88);
+    outline: 1px solid rgba(255, 255, 255, 0.24);
+    outline-offset: 8px;
     box-shadow: var(--shadow);
     filter: saturate(0.88) contrast(1.08);
 }
