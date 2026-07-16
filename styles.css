@@ -137,9 +137,8 @@ a {
 .hero::before {
     content: "PORTFOLIO";
     position: absolute;
-    left: 50%;
+    right: 2.5rem;
     bottom: 0.08em;
-    transform: translateX(-50%);
     color: rgba(255, 255, 255, 0.048);
     font-size: 12rem;
     font-weight: 950;
