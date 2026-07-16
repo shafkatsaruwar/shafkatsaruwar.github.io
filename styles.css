@@ -137,10 +137,11 @@ a {
 .hero::before {
     content: "PORTFOLIO";
     position: absolute;
-    right: -0.1em;
-    bottom: -0.1em;
+    left: 50%;
+    bottom: 0.08em;
+    transform: translateX(-50%);
     color: rgba(255, 255, 255, 0.048);
-    font-size: 14rem;
+    font-size: 12rem;
     font-weight: 950;
     letter-spacing: 0;
     line-height: 0.78;
@@ -593,7 +594,7 @@ footer {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .hero::before {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     .hero-content {
