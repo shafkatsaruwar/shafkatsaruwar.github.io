@@ -61,7 +61,7 @@ To run this site locally:
 
 ## 📝 License
 
-© 2025 Mohammed Shafkat Saruwar. All rights reserved.
+© 2026 Mohammed Shafkat Saruwar. All rights reserved.
 
 ## 📧 Contact
 
