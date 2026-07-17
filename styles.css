@@ -331,6 +331,7 @@ a {
 }
 
 .project-grid {
+    counter-reset: project-card;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
@@ -361,12 +362,25 @@ a {
 }
 
 .project-card {
+    counter-increment: project-card;
     min-height: 340px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 1.25rem;
     transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+.project-card::after {
+    content: "0" counter(project-card);
+    position: absolute;
+    right: 1rem;
+    top: 0.85rem;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 4.6rem;
+    font-weight: 950;
+    line-height: 1;
+    pointer-events: none;
 }
 
 .project-card:hover,
@@ -397,6 +411,56 @@ a {
 
 .project-card p {
     margin: 0.75rem 0 1rem;
+}
+
+.project-visual {
+    position: relative;
+    min-height: 120px;
+    display: grid;
+    align-content: end;
+    gap: 0.55rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(247, 147, 30, 0.16), transparent 46%);
+    background-size: 34px 34px, 34px 34px, auto;
+}
+
+.project-mark {
+    width: fit-content;
+    color: var(--orange);
+    background: rgba(247, 147, 30, 0.1);
+    border: 1px solid rgba(247, 147, 30, 0.28);
+    border-radius: 4px;
+    padding: 0.34rem 0.48rem;
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.12em;
+}
+
+.project-line {
+    display: block;
+    width: 62%;
+    height: 7px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.project-line-long {
+    width: 84%;
+}
+
+.project-line-short {
+    width: 42%;
+    background: rgba(247, 147, 30, 0.42);
+}
+
+.project-card-body {
+    position: relative;
+    z-index: 1;
 }
 
 .tech-tags {

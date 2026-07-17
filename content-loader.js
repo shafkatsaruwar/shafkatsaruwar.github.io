@@ -39,10 +39,18 @@ const renderFeaturedProjects = (projects = []) => {
 
     grid.innerHTML = projects.map((project) => `
         <div class="project-card">
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <div class="tech-tags">${splitTags(project.tags).map((tag) => `<span>${tag}</span>`).join("")}</div>
-            <a href="${project.href}" class="project-link">Learn More -></a>
+            <div class="project-visual" aria-hidden="true">
+                <span class="project-mark">${project.title.split(" ").map((word) => word[0]).join("").slice(0, 3)}</span>
+                <span class="project-line project-line-long"></span>
+                <span class="project-line"></span>
+                <span class="project-line project-line-short"></span>
+            </div>
+            <div class="project-card-body">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <div class="tech-tags">${splitTags(project.tags).map((tag) => `<span>${tag}</span>`).join("")}</div>
+                <a href="${project.href}" class="project-link">Learn More -></a>
+            </div>
         </div>
     `).join("");
 };
