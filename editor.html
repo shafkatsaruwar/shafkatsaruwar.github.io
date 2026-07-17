@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Editor | Shafkat.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Shafkat.dev</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="editor-shell">
+        <section class="editor-hero">
+            <p class="editor-kicker">No-code portfolio editor</p>
+            <h1>Edit your site content</h1>
+            <p>Change text, links, project details, skills, and contact info here. Download the new content file, then upload it to GitHub as <strong>content.json</strong>.</p>
+        </section>
+
+        <form class="editor-form" id="contentEditor"></form>
+
+        <section class="editor-actions">
+            <button class="btn btn-primary" type="button" id="downloadContent">Download content.json</button>
+            <button class="btn btn-secondary" type="button" id="resetContent">Reset changes</button>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

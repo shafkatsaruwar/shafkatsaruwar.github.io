@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Shafkat.dev</a>
+            <a href="index.html" class="nav-logo" data-brand>Shafkat.dev</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="projects.html" class="nav-link active">Projects</a></li>
@@ -21,11 +21,11 @@
     </nav>
 
     <div class="projects-hero">
-        <h1>My Projects</h1>
-        <p>Automation tools, web applications, and system utilities</p>
+        <h1 data-projects-heading>My Projects</h1>
+        <p data-projects-intro>Automation tools, web applications, and system utilities</p>
     </div>
 
-    <div class="container projects-section">
+    <div class="container projects-section" data-projects-section>
         
         <!-- National Park Matcher -->
         <div class="project-full" id="npm">
@@ -135,8 +135,9 @@
     </div>
 
     <footer>
-        <p>Updated <span data-last-updated>July 2026</span> &copy; Mohammed Shafkat Saruwar</p>
+        <p>Updated <span data-last-updated>July 2026</span> &copy; <span data-owner>Mohammed Shafkat Saruwar</span></p>
     </footer>
+    <script src="content-loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

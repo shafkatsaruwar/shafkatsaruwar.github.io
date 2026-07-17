@@ -1,0 +1,114 @@
+{
+  "site": {
+    "brand": "Shafkat.dev",
+    "owner": "Mohammed Shafkat Saruwar"
+  },
+  "hero": {
+    "name": "Mohammed Shafkat Saruwar",
+    "subtitle": "IT Professional & Software Developer",
+    "tagline": "Building automation tools and web applications with Python, Bash, and Flask",
+    "resumeHref": "website.pdf",
+    "githubHref": "https://github.com/shafkatsaruwar",
+    "linkedinHref": "https://linkedin.com/in/mohammedsaruwar",
+    "email": "mohammedsaruwar@icloud.com"
+  },
+  "featured": {
+    "heading": "Featured Projects",
+    "projects": [
+      {
+        "title": "National Park Matcher",
+        "description": "Flask web app for discovering US National Parks with location-based search",
+        "tags": "Python, Flask, APIs",
+        "href": "projects.html#npm"
+      },
+      {
+        "title": "Photo Sorter",
+        "description": "Python CLI tool organizing images by EXIF metadata",
+        "tags": "Python, PIL, CLI",
+        "href": "projects.html#photo"
+      },
+      {
+        "title": "Payroll Manager",
+        "description": "Bash automation system for HR payroll processing",
+        "tags": "Bash, Linux, Automation",
+        "href": "projects.html#payroll"
+      }
+    ]
+  },
+  "projectsPage": {
+    "heading": "My Projects",
+    "intro": "Automation tools, web applications, and system utilities",
+    "projects": [
+      {
+        "id": "npm",
+        "title": "National Park Matcher",
+        "summary": "Full-stack web application for discovering US National Parks through location-based search and trip planning",
+        "tags": "Python, Flask, HTML5/CSS3, Jinja2, REST APIs",
+        "overview": "Collaborative capstone project building a Flask-based web application for discovering US National Parks. Users can search 400+ parks by state or activity and get personalized driving directions.",
+        "features": "Multi-criteria search supporting state-based and activity-based filtering\nReal-time data integration with National Park Service API\nLocation-based Google Maps directions from user's starting point\nDynamic park detail pages with images and descriptions\nSupport for all 50 states and US territories",
+        "contributionTitle": "My Contributions",
+        "contributionIntro": "As the frontend developer, I was responsible for the user interface design and implementation:",
+        "contributions": "Built main landing page with dual search functionality\nDeveloped complete CSS styling system for consistent design\nCreated park listing and result pages\nCollaborated on Flask routing integration",
+        "links": [
+          { "label": "View on GitHub", "href": "https://github.com/shafkatsaruwar/National-Park-Matcher", "style": "primary" },
+          { "label": "Read More", "href": "https://maple-scion-f64.notion.site/National-Park-Matcher-27efeb8fc02e811ca5e7cd1df93b49e1", "style": "secondary" }
+        ]
+      },
+      {
+        "id": "photo",
+        "title": "Photo Sorter",
+        "summary": "Python CLI tool organizing images by EXIF metadata with automated audit reporting",
+        "tags": "Python, Pillow (PIL), EXIF Parsing, CSV, CLI",
+        "overview": "Command-line utility that automatically organizes photos into folders based on their EXIF metadata (date taken, camera model) and generates detailed CSV reports for auditing.",
+        "features": "Automated sorting by date or camera model\nEXIF metadata extraction from hundreds of images\nCSV report generation for quality assurance\nBatch processing of large photo libraries\nGraceful error handling for corrupted files",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Reduced manual photo organization time from 30 minutes to under 1 minute, saving approximately 90% of manual effort through automated EXIF parsing and intelligent file organization.",
+        "contributions": "",
+        "links": [
+          { "label": "View on GitHub", "href": "https://github.com/shafkatsaruwar/photo-sorter", "style": "primary" }
+        ]
+      },
+      {
+        "id": "payroll",
+        "title": "Payroll Manager for HR",
+        "summary": "Bash automation system for payroll processing with tax calculations and searchable database",
+        "tags": "Bash, Linux Utilities, grep/awk, Automation",
+        "overview": "Interactive command-line tool that automates payroll calculations for HR departments, featuring time tracking, progressive tax calculations, and a searchable employee database.",
+        "features": "Automated weekly timesheet processing\nProgressive tax bracket logic (5%-15% based on hours worked)\nSearchable employee database with fuzzy matching\nInteractive CLI menu system with input validation\nMonthly pay projections and tax withholding",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Eliminated manual computation errors and reduced payroll processing time by an estimated 70% through automation of calculations, tax logic, and employee record management.",
+        "contributions": "",
+        "links": [
+          { "label": "View on GitHub", "href": "https://github.com/shafkatsaruwar/payroll", "style": "primary" }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "heading": "About Me",
+    "intro": "I'm an IT professional transitioning into software development, with hands-on experience in system administration, technical support, and automation. I graduated from UMass Boston with a B.S. in Information Technology (Class of 2024) and have been building my development skills through personal projects and self-study.\n\nMy background in IT support has given me a strong foundation in troubleshooting, system infrastructure, and working with production environments. Now I'm channeling that experience into software development, focusing on automation tools, web applications, and scripting.\n\nI'm particularly interested in roles that bridge IT operations and software development-like DevOps, infrastructure engineering, or backend development-where I can leverage both my operational experience and growing programming skills.",
+    "skillsHeading": "Technical Skills",
+    "skills": [
+      { "title": "Programming Languages", "items": "Python\nBash\nJavaScript\nHTML5/CSS3" },
+      { "title": "Frameworks & Tools", "items": "Flask\nGit/GitHub\nVS Code\nLinux Shell" },
+      { "title": "IT Infrastructure", "items": "Active Directory\nOffice 365/Intune\nWindows/macOS/Linux Admin\nServiceNow" },
+      { "title": "Cloud & Systems", "items": "AWS (S3, Lambda)\nDatabase Management\nNetworking\nSystem Administration" }
+    ],
+    "experienceHeading": "Experience",
+    "experience": "I've worked in IT support roles at Nexworks and Mass General Brigham, where I managed user accounts, deployed workstations, troubleshot technical issues, and improved documentation processes. These experiences taught me how to work under pressure, communicate technical concepts clearly, and solve problems methodically.\n\nOutside of work, I build projects that automate repetitive tasks and solve real problems-like organizing photos, processing payroll, or helping people discover national parks. Each project is a chance to learn new technologies and improve my development skills.",
+    "educationHeading": "Education",
+    "education": "University of Massachusetts, Boston\nB.S. Information Technology, Class of 2024\nConcentration GPA: 3.75\n\nRelevant coursework: Cloud Integration Methodologies (AWS), Database Management, Systems Analysis & Design, Software Development, Networking",
+    "learningHeading": "What I'm Learning",
+    "learning": "Currently deepening my knowledge of data structures and algorithms, practicing problem-solving through coding challenges, and exploring backend development patterns. I'm committed to continuous learning and transitioning fully into software engineering."
+  },
+  "contact": {
+    "heading": "Get In Touch",
+    "intro": "Interested in working together? Have questions about my projects? Feel free to reach out.",
+    "methods": [
+      { "label": "Email", "text": "mohammedsaruwar@icloud.com", "href": "mailto:mohammedsaruwar@icloud.com" },
+      { "label": "LinkedIn", "text": "linkedin.com/in/mohammedsaruwar", "href": "https://linkedin.com/in/mohammedsaruwar" },
+      { "label": "GitHub", "text": "github.com/shafkatsaruwar", "href": "https://github.com/shafkatsaruwar" },
+      { "label": "Portfolio", "text": "View Detailed Portfolio on Notion", "href": "https://maple-scion-f64.notion.site/Academic-Projects-Portfolio-278feb8fc02e806d9fc2e2f77e6737e0" }
+    ]
+  }
+}

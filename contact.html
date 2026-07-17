@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Shafkat.dev</a>
+            <a href="index.html" class="nav-logo" data-brand>Shafkat.dev</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
@@ -21,10 +21,10 @@
     </nav>
 
     <div class="contact-section">
-        <h1>Get In Touch</h1>
-        <p>Interested in working together? Have questions about my projects? Feel free to reach out.</p>
+        <h1 data-contact-heading>Get In Touch</h1>
+        <p data-contact-intro>Interested in working together? Have questions about my projects? Feel free to reach out.</p>
 
-        <div class="contact-methods">
+        <div class="contact-methods" data-contact-methods>
             <div class="contact-item">
                 <h3>Email</h3>
                 <a href="mailto:mohammedsaruwar@icloud.com">mohammedsaruwar@icloud.com</a>
@@ -48,8 +48,9 @@
     </div>
 
     <footer>
-        <p>Updated <span data-last-updated>July 2026</span> &copy; Mohammed Shafkat Saruwar</p>
+        <p>Updated <span data-last-updated>July 2026</span> &copy; <span data-owner>Mohammed Shafkat Saruwar</span></p>
     </footer>
+    <script src="content-loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
