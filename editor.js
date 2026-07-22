@@ -39,7 +39,15 @@ const fieldGroups = [
             ["featured.projects.2.title", "Project 3 title"],
             ["featured.projects.2.description", "Project 3 description", "textarea"],
             ["featured.projects.2.tags", "Project 3 tags"],
-            ["featured.projects.2.href", "Project 3 link"]
+            ["featured.projects.2.href", "Project 3 link"],
+            ["featured.projects.3.title", "Project 4 title"],
+            ["featured.projects.3.description", "Project 4 description", "textarea"],
+            ["featured.projects.3.tags", "Project 4 tags"],
+            ["featured.projects.3.href", "Project 4 link"],
+            ["featured.projects.4.title", "Project 5 title"],
+            ["featured.projects.4.description", "Project 5 description", "textarea"],
+            ["featured.projects.4.tags", "Project 5 tags"],
+            ["featured.projects.4.href", "Project 5 link"]
         ]
     },
     {
@@ -73,7 +81,23 @@ const fieldGroups = [
             ["projectsPage.projects.2.overview", "Project 3 overview", "textarea"],
             ["projectsPage.projects.2.features", "Project 3 features, one per line", "textarea"],
             ["projectsPage.projects.2.contributionTitle", "Project 3 final section title"],
-            ["projectsPage.projects.2.contributionIntro", "Project 3 final section text", "textarea"]
+            ["projectsPage.projects.2.contributionIntro", "Project 3 final section text", "textarea"],
+            ["projectsPage.projects.3.title", "Project 4 title"],
+            ["projectsPage.projects.3.summary", "Project 4 summary", "textarea"],
+            ["projectsPage.projects.3.tags", "Project 4 tags"],
+            ["projectsPage.projects.3.overview", "Project 4 overview", "textarea"],
+            ["projectsPage.projects.3.features", "Project 4 features, one per line", "textarea"],
+            ["projectsPage.projects.3.contributionTitle", "Project 4 final section title"],
+            ["projectsPage.projects.3.contributionIntro", "Project 4 final section text", "textarea"],
+            ["projectsPage.projects.3.contributions", "Project 4 final bullets, one per line", "textarea"],
+            ["projectsPage.projects.4.title", "Project 5 title"],
+            ["projectsPage.projects.4.summary", "Project 5 summary", "textarea"],
+            ["projectsPage.projects.4.tags", "Project 5 tags"],
+            ["projectsPage.projects.4.overview", "Project 5 overview", "textarea"],
+            ["projectsPage.projects.4.features", "Project 5 features, one per line", "textarea"],
+            ["projectsPage.projects.4.contributionTitle", "Project 5 final section title"],
+            ["projectsPage.projects.4.contributionIntro", "Project 5 final section text", "textarea"],
+            ["projectsPage.projects.4.contributions", "Project 5 final bullets, one per line", "textarea"]
         ]
     },
     {

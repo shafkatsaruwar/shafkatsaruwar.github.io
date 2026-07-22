@@ -32,6 +32,18 @@
         "description": "Bash automation system for HR payroll processing",
         "tags": "Bash, Linux, Automation",
         "href": "projects.html#payroll"
+      },
+      {
+        "title": "Synapse",
+        "description": "Mobile health companion for meds, symptoms, appointments, recovery, and widgets",
+        "tags": "Expo, React Native, Supabase",
+        "href": "projects.html#synapse"
+      },
+      {
+        "title": "LifeOS",
+        "description": "Personal operating system for focus, planning, tasks, calendar, and brain capture",
+        "tags": "Next.js, Firebase, Tauri",
+        "href": "projects.html#lifeos"
       }
     ]
   },
@@ -80,6 +92,35 @@
         "contributions": "",
         "links": [
           { "label": "View on GitHub", "href": "https://github.com/shafkatsaruwar/payroll", "style": "primary" }
+        ]
+      },
+      {
+        "id": "synapse",
+        "title": "Synapse",
+        "summary": "Cross-platform health companion for managing medications, symptoms, appointments, recovery, and personal health details in one place",
+        "tags": "Expo SDK 54, React Native, TypeScript, Supabase, Expo Router, EAS Build",
+        "overview": "Synapse is a mobile health management app built with Expo and React Native. It helps users track scheduled and PRN medications, log symptoms, manage appointments, store health profile details, and use iOS widgets for quick access.",
+        "features": "Scheduled and PRN medication management\nDose logging, reminder flows, refill data, and pharmacy details\nSymptom, daily log, and recovery tracking\nAppointment scheduling with doctor notes and visit prep\nNative iOS widgets plus committed iOS and Android project support",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Built a production-minded health companion with a structured Expo Router app, native iOS support, Supabase-backed infrastructure, and app-store-ready release work.",
+        "contributions": "Organized the active app around the synapse-reset source of truth\nAdded medication, symptom, appointment, report, and recovery flows\nBuilt widget sync support for hydration, sick mode, and mental health experiences\nMaintained iOS/Android native folders, EAS configuration, and production-safe config fallbacks",
+        "links": [
+          { "label": "View on GitHub", "href": "https://github.com/shafkatsaruwar/synapse", "style": "primary" },
+          { "label": "App Store", "href": "https://apps.apple.com/us/app/synapse-health-companion/id6759972036", "style": "secondary" }
+        ]
+      },
+      {
+        "id": "lifeos",
+        "title": "LifeOS",
+        "summary": "Personal operating system for choosing priorities, protecting focus, planning days, capturing thoughts, and organizing life into spaces",
+        "tags": "Next.js, React 19, TypeScript, Firebase, Framer Motion, Tauri",
+        "overview": "LifeOS is a modular productivity cockpit built as a Next.js app with native macOS packaging through Tauri. It combines tasks, calendar, focus sessions, spaces, brain capture, settings, and integrations into one calm command center.",
+        "features": "Now, Today, Spaces, Library, Settings, Tasks, Calendar, Notes, Brain, Knowledge, and Resources views\nFocus mode with session tracking, halfway break prompts, floating resume dock, and keyboard shortcuts\nCalendar events with Google, iCloud, and import workflows\nBrain capture and command palette for fast task and thought entry\nContext Radar browser extension that detects approved job or learning sites without reading sensitive fields",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Designed and built an ADHD-friendly personal operating system that turns scattered work into visible priorities, focus sessions, calendar structure, and searchable personal context.",
+        "contributions": "Built a pluggable module architecture for tasks, calendar, projects, brain capture, and focus\nAdded Firebase-backed persistence with local/offline-friendly behavior\nCreated Tauri configuration for a native macOS version\nDesigned the Context Radar extension to suggest LifeOS activities from approved browser contexts",
+        "links": [
+          { "label": "View on GitHub", "href": "https://github.com/shafkatsaruwar/lifeos", "style": "primary" }
         ]
       }
     ]
