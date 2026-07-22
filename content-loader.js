@@ -37,7 +37,7 @@ const renderFeaturedProjects = (projects = []) => {
     const grid = document.querySelector("[data-featured-projects]");
     if (!grid) return;
 
-    grid.innerHTML = projects.map((project) => `
+    grid.innerHTML = projects.slice(0, 3).map((project) => `
         <div class="project-card">
             <div class="project-visual" aria-hidden="true">
                 <span class="project-mark">${project.title.split(" ").map((word) => word[0]).join("").slice(0, 3)}</span>
