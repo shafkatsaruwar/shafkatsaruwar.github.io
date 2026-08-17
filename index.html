@@ -3,126 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Mohammed Shafkat Saruwar | Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="Images/favicon.png">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo" data-brand>Shafkat.dev</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <button class="resume-toggle" type="button" data-resume-toggle aria-pressed="false">Resume Mode</button>
+    <a class="resume-download" href="website.pdf" download="Mohammed_Shafkat_Saruwar_Resume.pdf">Download Resume</a>
+    <main class="home-shell">
+        <section class="template-hero" id="top">
+            <nav class="hero-nav" aria-label="Primary navigation">
+                <a href="#about">About Me</a>
+                <a href="#project">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-    <main class="hero">
-        <div class="hero-content">
-            <img src="Images/selfie.png" alt="Mohammed Shafkat Saruwar" class="profile-img">
-            <h1 data-hero-name>Mohammed Shafkat Saruwar</h1>
-            <h2 class="subtitle" data-hero-subtitle>IT Professional & Software Developer</h2>
-            <p class="tagline" data-hero-tagline>Building automation tools and web applications with Python, Bash, and Flask</p>
-            
-            <div class="cta-buttons">
-                <a href="projects.html" class="btn btn-primary">View Projects</a>
-                <a href="website.pdf" class="btn btn-secondary" download data-resume-link>Download Resume</a>
+            <div class="hero-stage">
+                <h1>Hi, I'm Shaf!</h1>
+                <div class="hero-avatar" data-eye-track>
+                    <img src="Images/hero-avatar-clean.png" alt="3D avatar of Mohammed Shafkat Saruwar" class="hero-portrait">
+                    <span class="memoji-eye memoji-eye-left" aria-hidden="true"></span>
+                    <span class="memoji-eye memoji-eye-right" aria-hidden="true"></span>
+                </div>
+                <p class="hero-statement">A developer driven by building useful systems, automation tools, and sharp web experiences.</p>
+                <a href="#contact" class="hero-cta">Contact Me</a>
             </div>
+        </section>
 
-            <div class="social-links">
-                <a href="https://github.com/shafkatsaruwar" target="_blank" aria-label="GitHub" data-github-link>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-                <a href="https://linkedin.com/in/mohammedsaruwar" target="_blank" aria-label="LinkedIn" data-linkedin-link>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                </a>
-                <a href="mailto:mohammedsaruwar@icloud.com" aria-label="Email" data-email-link>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
-                    </svg>
-                </a>
+        <section class="editorial-section about-panel" id="about">
+            <div class="section-label">About Me</div>
+            <div class="about-copy">
+                <span class="about-eyebrow">Operator instincts. Developer execution. Zero patience for nonsense workflows.</span>
+                <p class="about-lede">I see a 14-click process and immediately start plotting its downfall.</p>
+                <p class="about-support">I come from IT support, automation, and production troubleshooting, which means I have stared directly into the beautiful disaster of real systems. Broken handoffs, mystery spreadsheets, manual steps with emotional baggage, tools held together by hope. I build software that makes all of that quieter.</p>
+                <div class="about-roast-grid" aria-label="How I think">
+                    <span><strong>Manual task?</strong><em>Cool, why are we doing side quests at work?</em></span>
+                    <span><strong>Fragile tool?</strong><em>If touching one button breaks five things, I am already suspicious.</em></span>
+                    <span><strong>Messy flow?</strong><em>I turn "who owns this?" into "done, next."</em></span>
+                </div>
+                <div class="proof-grid" aria-label="Portfolio strengths">
+                    <span>Automation-first</span>
+                    <span>Production-minded</span>
+                    <span>Chaos translator</span>
+                    <span>Builder energy</span>
+                </div>
+                <div class="about-actions">
+                    <a href="website.pdf" class="btn btn-primary" download data-resume-link>Download Resume</a>
+                    <a href="projects.html" class="btn btn-secondary">Full Project Index</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="skill-marquee" aria-label="Technical skills">
+            <div class="marquee-track">
+                <span>Python</span><span>Bash</span><span>JavaScript</span><span>React Native</span><span>Flask</span><span>Supabase</span><span>Firebase</span><span>AWS</span><span>Linux</span><span>GitHub</span>
+                <span>Python</span><span>Bash</span><span>JavaScript</span><span>React Native</span><span>Flask</span><span>Supabase</span><span>Firebase</span><span>AWS</span><span>Linux</span><span>GitHub</span>
+            </div>
+        </section>
+
+        <section class="editorial-section project-showcase-section" id="project">
+            <div class="section-label">Projects</div>
+            <div class="project-showcase" data-featured-projects>
+                <article class="showcase-slide is-active" data-carousel-slide>
+                    <span class="showcase-number">01</span>
+                    <div class="showcase-copy">
+                        <p>Featured</p>
+                        <h2>Synapse</h2>
+                        <span>Mobile health companion for meds, symptoms, appointments, recovery, and widgets</span>
+                    </div>
+                    <div class="project-graphic project-graphic-compact graphic-synapse" aria-hidden="true">
+                        <div class="phone-shell">
+                            <span></span>
+                            <span class="joke-score">129% guardian mode</span>
+                    <div class="phone-card phone-card-primary"><b>8:00</b><em>Medication due</em></div>
+                            <div class="phone-card"><i></i><em>Symptom log</em></div>
+                            <div class="phone-card"><i></i><em>Recovery trend</em></div>
+                        </div>
+                    </div>
+                    <a href="project-synapse.html">Open Project</a>
+                </article>
+                <article class="showcase-slide" data-carousel-slide>
+                    <span class="showcase-number">02</span>
+                    <div class="showcase-copy">
+                        <p>Featured</p>
+                        <h2>LifeOS</h2>
+                        <span>Personal operating system for focus, planning, tasks, calendar, and brain capture</span>
+                    </div>
+                    <div class="project-graphic project-graphic-compact graphic-lifeos" aria-hidden="true">
+                        <div class="dashboard-shell">
+                    <span class="joke-score">90% life together</span>
+                            <span class="dash-rail"></span>
+                            <span class="dash-card dash-card-wide"></span>
+                            <span class="dash-card"></span>
+                            <span class="dash-card"></span>
+                            <span class="dash-pill"></span>
+                            <span class="dash-line"></span>
+                        </div>
+                    </div>
+                    <a href="project-lifeos.html">Open Project</a>
+                </article>
+                <article class="showcase-slide" data-carousel-slide>
+                    <span class="showcase-number">03</span>
+                    <div class="showcase-copy">
+                        <p>React / Gemini</p>
+                        <h2>Resume Tailor</h2>
+                        <span>Full-stack AI resume tailoring studio that matches resumes to job descriptions without fabricating experience</span>
+                    </div>
+                    <div class="project-graphic project-graphic-compact graphic-resume" aria-hidden="true">
+                        <div class="resume-shell-graphic">
+                            <span class="resume-score">92% brain power used</span>
+                            <span class="resume-line resume-line-long"></span>
+                            <span class="resume-line"></span>
+                            <span class="resume-line resume-line-short"></span>
+                            <span class="resume-gap"></span>
+                            <span class="resume-check"></span>
+                        </div>
+                    </div>
+                    <a href="project-resume-tailor.html">Open Project</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="editorial-section experience-panel" id="experience">
+            <div class="section-label">Experience</div>
+            <div class="experience-list">
+                <article>
+                    <span>01</span>
+                    <div>
+                        <p>Mass General Brigham</p>
+                        <h2>IT Support / Systems Work</h2>
+                        <time>Production Support</time>
+                    </div>
+                    <p>Supported users, deployed workstations, handled account workflows, and improved documentation in a real healthcare environment where details matter.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <div>
+                        <p>Nexworks</p>
+                        <h2>Technical Support</h2>
+                        <time>Infrastructure Foundation</time>
+                    </div>
+                    <p>Built the troubleshooting muscle: clear communication, fast diagnosis, repeatable fixes, and practical systems thinking.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="editorial-section education-panel" id="education">
+            <div class="section-label">Education</div>
+            <div class="education-card">
+                <span>University of Massachusetts Boston</span>
+                <h2>B.S. Information Technology</h2>
+                <p>Class of 2024 · Concentration GPA: 3.75</p>
+                <p>Relevant coursework: Cloud Integration Methodologies, Database Management, Systems Analysis & Design, Software Development, and Networking.</p>
+            </div>
+        </section>
+
+        <section class="contact-hero" id="contact">
+            <p>Available for developer, IT automation, and systems-minded software roles.</p>
+            <h2>Let's build something useful.</h2>
+            <div class="contact-strip">
+                <a href="mailto:mohammedsaruwar@icloud.com" data-email-link>Email</a>
+                <a href="https://github.com/shafkatsaruwar" target="_blank" data-github-link>GitHub</a>
+                <a href="https://linkedin.com/in/mohammedsaruwar" target="_blank" data-linkedin-link>LinkedIn</a>
+            </div>
+        </section>
     </main>
 
-    <section class="featured-projects">
-        <div class="container">
-            <h2 data-featured-heading>Featured Projects</h2>
-            <div class="project-grid" data-featured-projects>
-                <div class="project-card">
-                    <div class="project-visual" aria-hidden="true">
-                        <span class="project-mark">S</span>
-                        <span class="project-line project-line-long"></span>
-                        <span class="project-line"></span>
-                        <span class="project-line project-line-short"></span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>Synapse</h3>
-                        <p>Mobile health companion for meds, symptoms, appointments, recovery, and widgets</p>
-                        <div class="tech-tags">
-                            <span>Expo</span>
-                            <span>React Native</span>
-                            <span>Supabase</span>
-                        </div>
-                        <a href="projects.html#synapse" class="project-link">Learn More →</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-visual" aria-hidden="true">
-                        <span class="project-mark">L</span>
-                        <span class="project-line project-line-long"></span>
-                        <span class="project-line"></span>
-                        <span class="project-line project-line-short"></span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>LifeOS</h3>
-                        <p>Personal operating system for focus, planning, tasks, calendar, and brain capture</p>
-                        <div class="tech-tags">
-                            <span>Next.js</span>
-                            <span>Firebase</span>
-                            <span>Tauri</span>
-                        </div>
-                        <a href="projects.html#lifeos" class="project-link">Learn More →</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-visual" aria-hidden="true">
-                        <span class="project-mark">PM</span>
-                        <span class="project-line project-line-long"></span>
-                        <span class="project-line"></span>
-                        <span class="project-line project-line-short"></span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>Payroll Manager</h3>
-                        <p>Bash automation system for HR payroll processing</p>
-                        <div class="tech-tags">
-                            <span>Bash</span>
-                            <span>Linux</span>
-                            <span>Automation</span>
-                        </div>
-                        <a href="projects.html#payroll" class="project-link">Learn More →</a>
-                    </div>
-                </div>
+    <main class="resume-view" aria-label="ATS friendly resume">
+        <header class="resume-header">
+            <h1>Mohammed Shafkat Saruwar</h1>
+            <p>IT Professional & Software Developer</p>
+            <div class="resume-links">
+                <a href="mailto:mohammedsaruwar@icloud.com">Email</a>
+                <a href="https://github.com/shafkatsaruwar" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/mohammedsaruwar" target="_blank">LinkedIn</a>
+                <a href="index.html">Website</a>
             </div>
-            <div class="featured-actions">
-                <a href="projects.html" class="btn btn-secondary">Read More</a>
-            </div>
-        </div>
-    </section>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Software developer with an IT operations background across support, automation, troubleshooting, and production-minded workflows. Builds practical web apps, scripts, and tools that reduce manual work, clarify handoffs, and make systems easier to use under pressure.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> Python, Bash, JavaScript, HTML, CSS, TypeScript</p>
+            <p><strong>Frameworks & Tools:</strong> Flask, React Native, Expo, Next.js, Git, GitHub, VS Code, Linux Shell</p>
+            <p><strong>Systems & Cloud:</strong> Active Directory, Office 365, Intune, Windows, macOS, Linux, AWS, Firebase, Supabase, ServiceNow</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>Synapse</h3>
+                <p><strong>Expo, React Native, TypeScript, Supabase</strong></p>
+                <p>Mobile health companion for medications, symptoms, appointments, recovery, health details, and widgets.</p>
+                <p><a href="https://github.com/shafkatsaruwar/synapse" target="_blank">GitHub</a> · <a href="https://apps.apple.com/us/app/synapse-health-companion/id6759972036" target="_blank">App Store</a></p>
+            </article>
+            <article>
+                <h3>LifeOS</h3>
+                <p><strong>Next.js, React, TypeScript, Firebase, Tauri</strong></p>
+                <p>Personal operating system for focus, planning, tasks, calendar workflows, notes, brain capture, and productivity systems.</p>
+                <p><a href="https://lifeos-mu-three.vercel.app/?view=now" target="_blank">Live Project</a></p>
+            </article>
+            <article>
+                <h3>Resume Tailor AI</h3>
+                <p><strong>React 19, TypeScript, Tailwind CSS v4, Node.js, Express, Gemini, Firebase Auth, Firestore</strong></p>
+                <p>Full-stack AI resume tailoring studio that compares a resume against a job description, returns targeted ATS-friendly resume content, flags gaps, and avoids fabricated skills or exaggerated metrics.</p>
+                <p><a href="https://yellowfintuna.ai.studio" target="_blank">Live Project</a></p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <article>
+                <h3>Mass General Brigham · IT Support / Systems Work</h3>
+                <p>Supported users, deployed workstations, handled account workflows, troubleshot production issues, and improved documentation in a healthcare environment.</p>
+            </article>
+            <article>
+                <h3>Nexworks · Technical Support</h3>
+                <p>Resolved technical issues, strengthened troubleshooting workflows, communicated fixes clearly, and built practical systems instincts through support work.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <h3>University of Massachusetts Boston</h3>
+                <p>B.S. Information Technology, Class of 2024 · Concentration GPA: 3.75</p>
+                <p>Relevant coursework: Cloud Integration Methodologies, Database Management, Systems Analysis & Design, Software Development, Networking.</p>
+            </article>
+        </section>
+    </main>
 
     <footer>
         <p>Updated <span data-last-updated>July 2026</span> &copy; <span data-owner>Mohammed Shafkat Saruwar</span></p>
     </footer>
-    <script src="content-loader.js"></script>
-    <script src="script.js"></script>
+    <script src="content-loader.js?v=resume"></script>
+    <script src="script.js?v=resume"></script>
 </body>
 </html>

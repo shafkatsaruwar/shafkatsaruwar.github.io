@@ -20,124 +20,107 @@
         </div>
     </nav>
 
-    <div class="projects-hero">
-        <h1 data-projects-heading>My Projects</h1>
-        <p data-projects-intro>Automation tools, web applications, and system utilities</p>
-    </div>
+    <main>
+        <section class="projects-hero">
+            <h1>Projects</h1>
+            <p>Pick a build. The quick version lives here. The nerdy breakdown is inside each dig deep page.</p>
+        </section>
 
-    <div class="container projects-section" data-projects-section>
-        
-        <!-- National Park Matcher -->
-        <div class="project-full" id="npm">
-            <h2>National Park Matcher</h2>
-            <p><strong>Full-stack web application for discovering US National Parks through location-based search and trip planning</strong></p>
-            
-            <div class="tech-tags">
-                <span>Python</span>
-                <span>Flask</span>
-                <span>HTML5/CSS3</span>
-                <span>Jinja2</span>
-                <span>REST APIs</span>
+        <section class="projects-section container" aria-label="Featured projects">
+            <article class="project-teaser">
+                <span>Mobile Health Companion</span>
+                <h2>Synapse</h2>
+                <p>Health companion for medications, symptoms, appointments, recovery, health details, and widgets.</p>
+                <div class="tech-tags">
+                    <span>React Native</span><span>TypeScript</span><span>Supabase</span><span>Expo</span>
+                </div>
+                <div class="dig-deep">
+                    <p>Wanna dig deep?</p>
+                    <a href="project-synapse.html">Open Synapse</a>
+                    <a href="https://apps.apple.com/us/app/synapse-health-companion/id6759972036" target="_blank">App Store</a>
+                </div>
+            </article>
+
+            <article class="project-teaser">
+                <span>Personal Operating System</span>
+                <h2>LifeOS</h2>
+                <p>Focus, planning, tasks, calendar work, notes, and brain capture in one personal command center.</p>
+                <div class="tech-tags">
+                    <span>Next.js</span><span>React 19</span><span>Firebase</span><span>Tauri</span>
+                </div>
+                <div class="dig-deep">
+                    <p>Wanna dig deep?</p>
+                    <a href="project-lifeos.html">Open LifeOS</a>
+                    <a href="https://lifeos-mu-three.vercel.app/?view=now" target="_blank">Live Project</a>
+                </div>
+            </article>
+
+            <article class="project-teaser">
+                <span>AI Resume Tailoring Studio</span>
+                <h2>Resume Tailor AI</h2>
+                <p>Compares a resume to a job description and returns targeted resume content without making stuff up.</p>
+                <div class="tech-tags">
+                    <span>React</span><span>TypeScript</span><span>Express</span><span>Gemini</span><span>Firebase</span>
+                </div>
+                <div class="dig-deep">
+                    <p>Wanna dig deep?</p>
+                    <a href="project-resume-tailor.html">Open Resume Tailor</a>
+                    <a href="https://yellowfintuna.ai.studio" target="_blank">Live Project</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="additional-projects container" aria-label="Additional projects">
+            <div class="additional-projects-heading">
+                <span>Also built</span>
+                <h2>Smaller builds, same operator brain.</h2>
+                <p>Scripts, analysis work, utilities, and coursework projects that show the same thing: less chaos, more useful systems.</p>
             </div>
-
-            <h3>Overview</h3>
-            <p>Collaborative capstone project building a Flask-based web application for discovering US National Parks. Users can search 400+ parks by state or activity and get personalized driving directions.</p>
-
-            <h3>Key Features</h3>
-            <ul>
-                <li>Multi-criteria search supporting state-based and activity-based filtering</li>
-                <li>Real-time data integration with National Park Service API</li>
-                <li>Location-based Google Maps directions from user's starting point</li>
-                <li>Dynamic park detail pages with images and descriptions</li>
-                <li>Support for all 50 states and US territories</li>
-            </ul>
-
-            <h3>My Contributions</h3>
-            <p>As the frontend developer, I was responsible for the user interface design and implementation:</p>
-            <ul>
-                <li>Built main landing page with dual search functionality</li>
-                <li>Developed complete CSS styling system for consistent design</li>
-                <li>Created park listing and result pages</li>
-                <li>Collaborated on Flask routing integration</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="https://github.com/shafkatsaruwar/National-Park-Matcher" target="_blank" class="btn btn-primary">View on GitHub</a>
-                <a href="https://maple-scion-f64.notion.site/National-Park-Matcher-27efeb8fc02e811ca5e7cd1df93b49e1" target="_blank" class="btn btn-secondary">Read More</a>
+            <div class="mini-project-grid">
+                <article class="mini-project-card">
+                    <span>Photo Sorter</span>
+                    <h3>EXIF Organizer</h3>
+                    <p>Organizes 500+ photos by metadata so giant camera-roll messes stop being a personality test.</p>
+                    <div class="tech-tags"><span>Python</span><span>Automation</span><span>Metadata</span></div>
+                </article>
+                <article class="mini-project-card">
+                    <span>Business Analysis</span>
+                    <h3>Case Studies</h3>
+                    <p>SWOT, ROI, and cost-benefit analysis for practical IT decision making.</p>
+                    <div class="tech-tags"><span>Analysis</span><span>ROI</span><span>Systems</span></div>
+                </article>
+                <article class="mini-project-card">
+                    <span>Bash Automation</span>
+                    <h3>Payroll Script</h3>
+                    <p>Time tracking, tax calculations, validation, and searchable employee records.</p>
+                    <div class="tech-tags"><span>Bash</span><span>CLI</span><span>Validation</span></div>
+                </article>
+                <article class="mini-project-card">
+                    <span>Capstone Web App</span>
+                    <h3>National Parks Matcher</h3>
+                    <p>Search U.S. parks by amenities, activities, location, and trip preferences.</p>
+                    <div class="tech-tags"><span>Web App</span><span>Search</span><span>UX</span></div>
+                </article>
+                <article class="mini-project-card">
+                    <span>System Utility</span>
+                    <h3>Directory Maker</h3>
+                    <p>Repeatable folder structures for organized coursework and project files.</p>
+                    <div class="tech-tags"><span>Bash</span><span>Files</span><span>Workflow</span></div>
+                </article>
+                <article class="mini-project-card">
+                    <span>Bash Script</span>
+                    <h3>Gradebook</h3>
+                    <p>Command-line score recording, grade calculation, and shell input practice.</p>
+                    <div class="tech-tags"><span>Bash</span><span>CLI</span><span>Logic</span></div>
+                </article>
             </div>
-        </div>
-
-        <!-- Photo Sorter -->
-        <div class="project-full" id="photo">
-            <h2>Photo Sorter</h2>
-            <p><strong>Python CLI tool organizing images by EXIF metadata with automated audit reporting</strong></p>
-            
-            <div class="tech-tags">
-                <span>Python</span>
-                <span>Pillow (PIL)</span>
-                <span>EXIF Parsing</span>
-                <span>CSV</span>
-                <span>CLI</span>
-            </div>
-
-            <h3>Overview</h3>
-            <p>Command-line utility that automatically organizes photos into folders based on their EXIF metadata (date taken, camera model) and generates detailed CSV reports for auditing.</p>
-
-            <h3>Key Features</h3>
-            <ul>
-                <li>Automated sorting by date or camera model</li>
-                <li>EXIF metadata extraction from hundreds of images</li>
-                <li>CSV report generation for quality assurance</li>
-                <li>Batch processing of large photo libraries</li>
-                <li>Graceful error handling for corrupted files</li>
-            </ul>
-
-            <h3>Impact</h3>
-            <p>Reduced manual photo organization time from 30 minutes to under 1 minute, saving approximately 90% of manual effort through automated EXIF parsing and intelligent file organization.</p>
-
-            <div class="project-links">
-                <a href="https://github.com/shafkatsaruwar/photo-sorter" target="_blank" class="btn btn-primary">View on GitHub</a>
-            </div>
-        </div>
-
-        <!-- Payroll Manager -->
-        <div class="project-full" id="payroll">
-            <h2>Payroll Manager for HR</h2>
-            <p><strong>Bash automation system for payroll processing with tax calculations and searchable database</strong></p>
-            
-            <div class="tech-tags">
-                <span>Bash</span>
-                <span>Linux Utilities</span>
-                <span>grep/awk</span>
-                <span>Automation</span>
-            </div>
-
-            <h3>Overview</h3>
-            <p>Interactive command-line tool that automates payroll calculations for HR departments, featuring time tracking, progressive tax calculations, and a searchable employee database.</p>
-
-            <h3>Key Features</h3>
-            <ul>
-                <li>Automated weekly timesheet processing</li>
-                <li>Progressive tax bracket logic (5%-15% based on hours worked)</li>
-                <li>Searchable employee database with fuzzy matching</li>
-                <li>Interactive CLI menu system with input validation</li>
-                <li>Monthly pay projections and tax withholding</li>
-            </ul>
-
-            <h3>Impact</h3>
-            <p>Eliminated manual computation errors and reduced payroll processing time by an estimated 70% through automation of calculations, tax logic, and employee record management.</p>
-
-            <div class="project-links">
-                <a href="https://github.com/shafkatsaruwar/payroll" target="_blank" class="btn btn-primary">View on GitHub</a>
-            </div>
-        </div>
-
-    </div>
+        </section>
+    </main>
 
     <footer>
         <p>Updated <span data-last-updated>July 2026</span> &copy; <span data-owner>Mohammed Shafkat Saruwar</span></p>
     </footer>
-    <script src="content-loader.js"></script>
-    <script src="script.js"></script>
+    <script src="content-loader.js?v=pages"></script>
+    <script src="script.js?v=pages"></script>
 </body>
 </html>

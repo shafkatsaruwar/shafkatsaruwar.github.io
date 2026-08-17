@@ -19,19 +19,19 @@
         "title": "Synapse",
         "description": "Mobile health companion for meds, symptoms, appointments, recovery, and widgets",
         "tags": "Expo, React Native, Supabase",
-        "href": "projects.html#synapse"
+        "href": "project-synapse.html"
       },
       {
         "title": "LifeOS",
         "description": "Personal operating system for focus, planning, tasks, calendar, and brain capture",
         "tags": "Next.js, Firebase, Tauri",
-        "href": "projects.html#lifeos"
+        "href": "project-lifeos.html"
       },
       {
-        "title": "National Park Matcher",
-        "description": "Flask web app for discovering US National Parks with location-based search",
-        "tags": "Python, Flask, APIs",
-        "href": "projects.html#npm"
+        "title": "Resume Tailor",
+        "description": "AI resume tailoring studio matching resumes to job descriptions without fabrication",
+        "tags": "React 19, TypeScript, Gemini",
+        "href": "project-resume-tailor.html"
       },
       {
         "title": "Photo Sorter",
@@ -87,7 +87,25 @@
         "links": [
           {
             "label": "View on GitHub",
-            "href": "https://github.com/shafkatsaruwar/lifeos",
+            "href": "https://lifeos-mu-three.vercel.app/?view=now",
+            "style": "primary"
+          }
+        ]
+      },
+      {
+        "id": "resume-tailor",
+        "title": "Resume Tailor AI",
+        "summary": "Full-stack AI resume tailoring studio that compares a resume against a job description and returns a targeted, ATS-friendly resume without inventing experience",
+        "tags": "React 19, TypeScript, Tailwind CSS v4, Motion, Vite, Node.js, Express, Gemini, Firebase Auth, Firestore",
+        "overview": "Resume Tailor AI is a full-stack web application designed to tailor professional resumes to target job descriptions with zero fabrication. It analyzes the job description alongside existing candidate experience, mirrors exact industry terminology, rewrites bullets with stronger structure, and calculates alignment match scores.",
+        "features": "AI resume tailoring engine using strict no-fabrication instructions\nStraight-talk recruiter feedback with weak bullet callouts, stretch warnings, and missing requirement gap analysis\nAI resume text parser that converts raw resume text into structured sections\nLive resume studio with Minimalist, Executive, and Tech templates plus typography controls\nLocalStorage autosave with Firestore backup across sessions\nPrint-to-PDF export, JSON import/export, keyboard shortcuts, and dark navy mode",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Built an AI-assisted resume workflow that helps candidates target roles honestly, improve resume clarity, and separate real fit gaps from exaggerated claims.",
+        "contributions": "Implemented React and TypeScript component architecture for resume parsing, editing, previewing, and tailoring flows\nBuilt Node/Express API endpoints for Gemini processing behind a server-side security proxy\nAdded Firebase Authentication and Firestore persistence for user profiles, resumes, and tailoring history\nDesigned ATS-friendly print output and accessibility-focused keyboard shortcuts",
+        "links": [
+          {
+            "label": "Live Project",
+            "href": "https://yellowfintuna.ai.studio",
             "style": "primary"
           }
         ]
@@ -114,6 +132,42 @@
             "style": "secondary"
           }
         ]
+      },
+      {
+        "id": "case-studies",
+        "title": "Case Studies",
+        "summary": "Academic IT case study work analyzing technology decisions through business, financial, and operational frameworks",
+        "tags": "IT Strategy, SWOT, ROI, Cost-Benefit Analysis, Technical Writing",
+        "overview": "Case study work from IT coursework, including individual and group business analysis projects. The largest project evaluated UMass Boston's Blackboard LMS through SWOT, ROI, and cost-benefit analysis.",
+        "features": "30+ page group report on Blackboard LMS\nSWOT analysis and recommendation framing\nROI and cost-benefit evaluation\nBusiness-focused technology decision making\nClear written communication for non-technical stakeholders",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Built stronger technical communication habits by turning messy system decisions into structured analysis, tradeoffs, and recommendations.",
+        "contributions": "Contributed to research, writing, analysis, and recommendation development for IT case study deliverables",
+        "links": []
+      },
+      {
+        "id": "directory-maker",
+        "title": "Directory Maker",
+        "summary": "Automation script for creating repeatable folder structures and reducing manual project setup",
+        "tags": "Scripting, Filesystems, Automation, CLI",
+        "overview": "Directory Maker is a small system utility for generating organized folder structures quickly. It reflects the kind of practical automation work that turns repeated setup tasks into a reusable workflow.",
+        "features": "Repeatable directory structure generation\nCommand-line workflow\nProject and coursework organization support\nReduced manual setup steps",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Turned a repetitive file organization task into a simple scripted utility.",
+        "contributions": "",
+        "links": []
+      },
+      {
+        "id": "gradebook",
+        "title": "Gradebook Bash Script",
+        "summary": "Command-line gradebook workflow for recording scores and calculating academic results",
+        "tags": "Bash, CLI, Linux, Input Validation",
+        "overview": "Gradebook Bash Script is a shell-based academic utility for practicing command-line input handling, calculations, and structured output.",
+        "features": "Score entry workflow\nGrade calculation logic\nCommand-line menus\nInput handling and validation\nShell scripting practice",
+        "contributionTitle": "Impact",
+        "contributionIntro": "Strengthened shell scripting fundamentals through a practical coursework-style automation problem.",
+        "contributions": "",
+        "links": []
       },
       {
         "id": "photo",
@@ -155,7 +209,7 @@
   },
   "about": {
     "heading": "About Me",
-    "intro": "I'm an IT professional transitioning into software development, with hands-on experience in system administration, technical support, and automation. I graduated from UMass Boston with a B.S. in Information Technology (Class of 2024) and have been building my development skills through personal projects and self-study.\n\nMy background in IT support has given me a strong foundation in troubleshooting, system infrastructure, and working with production environments. Now I'm channeling that experience into software development, focusing on automation tools, web applications, and scripting.\n\nI'm particularly interested in roles that bridge IT operations and software development-like DevOps, infrastructure engineering, or backend development-where I can leverage both my operational experience and growing programming skills.",
+    "intro": "I build software like someone who has actually had to support the thing after launch. That means I care about boring magic: fewer clicks, cleaner handoffs, useful dashboards, scripts that do the annoying part, and tools that do not collapse the second a real human uses them.\n\nMy background is IT support, infrastructure, automation, and production troubleshooting. Translation: I have seen the chaos up close. The mystery spreadsheet. The repeated manual task. The process everyone hates but nobody has time to fix. I am the person who looks at that and goes, yeah, this should be software.\n\nI graduated from UMass Boston with a B.S. in Information Technology, and now I build across web apps, scripts, dashboards, and backend-friendly tooling. I like the work where operator brain meets developer hands.",
     "skillsHeading": "Technical Skills",
     "skills": [
       {
@@ -176,11 +230,11 @@
       }
     ],
     "experienceHeading": "Experience",
-    "experience": "I've worked in IT support roles at Nexworks and Mass General Brigham, where I managed user accounts, deployed workstations, troubleshot technical issues, and improved documentation processes. These experiences taught me how to work under pressure, communicate technical concepts clearly, and solve problems methodically.\n\nOutside of work, I build projects that automate repetitive tasks and solve real problems-like organizing photos, processing payroll, or helping people discover national parks. Each project is a chance to learn new technologies and improve my development skills.",
+    "experience": "I've worked in IT support roles at Nexworks and Mass General Brigham, where I managed accounts, deployed workstations, troubleshot real user problems, and improved documentation so the next person did not have to perform archaeology.\n\nOutside of work, I build projects that turn messy workflows into usable tools: health tracking, life planning, resume tailoring, photo sorting, payroll scripts, and search tools. Basically, if a task feels repetitive enough to make someone sigh, I start hearing build music.",
     "educationHeading": "Education",
     "education": "University of Massachusetts, Boston\nB.S. Information Technology, Class of 2024\nConcentration GPA: 3.75\n\nRelevant coursework: Cloud Integration Methodologies (AWS), Database Management, Systems Analysis & Design, Software Development, Networking",
     "learningHeading": "What I'm Learning",
-    "learning": "Currently deepening my knowledge of data structures and algorithms, practicing problem-solving through coding challenges, and exploring backend development patterns. I'm committed to continuous learning and transitioning fully into software engineering."
+    "learning": "Currently sharpening data structures, backend patterns, full-stack architecture, and the discipline of making things feel simple even when the system underneath is doing a lot. Clean software is not magic. It is taste, reps, and refusing to let the workflow win."
   },
   "contact": {
     "heading": "Get In Touch",

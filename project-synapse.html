@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse | Mohammed Shafkat Saruwar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" data-brand>Shafkat.dev</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <a href="projects.html" class="back-link">Back to Projects</a>
+        <section class="project-detail-hero">
+            <p>Mobile Health Companion</p>
+            <h1>Synapse</h1>
+            <span>Expo SDK 54 · React Native · TypeScript · Supabase · Expo Router · EAS Build</span>
+            <div class="project-links">
+                <a href="https://apps.apple.com/us/app/synapse-health-companion/id6759972036" target="_blank" class="btn btn-primary">App Store</a>
+                <a href="https://github.com/shafkatsaruwar/synapse" target="_blank" class="btn btn-secondary">GitHub</a>
+            </div>
+            <div class="project-graphic project-graphic-hero graphic-synapse" aria-hidden="true">
+                <div class="phone-shell">
+                    <span></span>
+                    <span class="joke-score">129% guardian mode</span>
+                    <div class="phone-card phone-card-primary"><b>8:00</b><em>Medication due</em></div>
+                    <div class="phone-card"><i></i><em>Symptom log</em></div>
+                    <div class="phone-card"><i></i><em>Recovery trend</em></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-bento synapse-bento" aria-label="Synapse feature overview">
+            <div class="detail-bento-heading">
+                <h2>Synapse feature map</h2>
+                <p>Click a bubble. It opens up like a tiny product teardown instead of making you read a wall of text like it is 2012.</p>
+            </div>
+
+            <div class="expand-bento-grid" data-expand-bento>
+                <button class="expand-bento-card expand-bento-large synapse-what is-expanded" type="button" aria-expanded="true">
+                    <span>What It Does</span>
+                    <strong>Health command center</strong>
+                    <p>Synapse manages medications, symptoms, appointments, recovery, and personal health details in one mobile app.</p>
+                    <em>Built for the everyday health context people usually scatter across notes, memory, screenshots, and “wait, when did I take that?” moments.</em>
+                </button>
+
+                <button class="expand-bento-card synapse-why" type="button" aria-expanded="false">
+                    <span>Why It Matters</span>
+                    <strong>Less health chaos</strong>
+                    <p>Health tracking gets messy fast when details are spread everywhere.</p>
+                    <em>Synapse makes those details visible and structured so medication, symptom, and appointment context is easier to trust.</em>
+                </button>
+
+                <button class="expand-bento-card expand-bento-tall synapse-build" type="button" aria-expanded="false">
+                    <span>Build Notes</span>
+                    <strong>Native-feeling app</strong>
+                    <p>Expo SDK 54, React Native, TypeScript, Supabase, Expo Router, and EAS Build.</p>
+                    <em>Includes scheduled and PRN medication flows, dose logging, reminder flows, refill data, pharmacy details, daily logs, reports, recovery flows, and native iOS widgets.</em>
+                </button>
+
+                <div class="expand-bento-card expand-bento-visual synapse-visual" aria-label="Synapse app graphic">
+                    <div class="project-graphic project-graphic-index graphic-synapse" aria-hidden="true">
+                        <div class="phone-shell">
+                            <span></span>
+                            <span class="joke-score">129% guardian mode</span>
+                            <div class="phone-card phone-card-primary"><b>8:00</b><em>Medication due</em></div>
+                            <div class="phone-card"><i></i><em>Symptom log</em></div>
+                            <div class="phone-card"><i></i><em>Recovery trend</em></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="expand-bento-card synapse-medication" type="button" aria-expanded="false">
+                    <span>Medication</span>
+                    <strong>PRN + scheduled</strong>
+                    <p>Dose logging, reminders, refill data, and pharmacy details.</p>
+                    <em>The boring-but-critical stuff gets its own structure so users are not relying on vibes and memory.</em>
+                </button>
+
+                <button class="expand-bento-card synapse-tracking" type="button" aria-expanded="false">
+                    <span>Tracking</span>
+                    <strong>Symptoms + recovery</strong>
+                    <p>Daily logs and recovery flows for patterns that should not live only in memory.</p>
+                    <em>Turns “I think it happened Tuesday?” into something easier to review and act on.</em>
+                </button>
+
+                <button class="expand-bento-card synapse-platform" type="button" aria-expanded="false">
+                    <span>Platform</span>
+                    <strong>iOS widgets</strong>
+                    <p>Native widgets plus iOS and Android project support through Expo.</p>
+                    <em>Important health reminders should not be buried six taps deep inside an app.</em>
+                </button>
+
+                <button class="expand-bento-card synapse-backend" type="button" aria-expanded="false">
+                    <span>Backend</span>
+                    <strong>Supabase</strong>
+                    <p>Persistent foundation for health records and app state.</p>
+                    <em>The data layer supports the product goal: health context that survives past one session.</em>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Updated <span data-last-updated>July 2026</span> &copy; <span data-owner>Mohammed Shafkat Saruwar</span></p>
+    </footer>
+    <script src="content-loader.js?v=pages"></script>
+    <script src="script.js?v=pages"></script>
+</body>
+</html>

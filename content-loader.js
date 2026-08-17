@@ -33,9 +33,89 @@ const renderList = (container, items) => {
         .join("");
 };
 
+const getProjectGraphicType = (project) => {
+    const key = `${project.id || ""} ${project.title || ""}`.toLowerCase();
+    if (key.includes("synapse")) return "synapse";
+    if (key.includes("lifeos") || key.includes("life os")) return "lifeos";
+    if (key.includes("resume")) return "resume";
+    return "system";
+};
+
+const renderProjectGraphic = (project, variant = "compact") => {
+    const type = getProjectGraphicType(project);
+
+    if (type === "synapse") {
+        return `
+            <div class="project-graphic project-graphic-${variant} graphic-synapse" aria-hidden="true">
+                <div class="phone-shell">
+                    <span></span>
+                    <span class="joke-score">129% guardian mode</span>
+                    <div class="phone-card phone-card-primary"><b>8:00</b><em>Medication due</em></div>
+                    <div class="phone-card"><i></i><em>Symptom log</em></div>
+                    <div class="phone-card"><i></i><em>Recovery trend</em></div>
+                </div>
+            </div>
+        `;
+    }
+
+    if (type === "lifeos") {
+        return `
+            <div class="project-graphic project-graphic-${variant} graphic-lifeos" aria-hidden="true">
+                <div class="dashboard-shell">
+                    <span class="joke-score">90% life together</span>
+                    <span class="dash-rail"></span>
+                    <span class="dash-card dash-card-wide"></span>
+                    <span class="dash-card"></span>
+                    <span class="dash-card"></span>
+                    <span class="dash-pill"></span>
+                    <span class="dash-line"></span>
+                </div>
+            </div>
+        `;
+    }
+
+    if (type === "resume") {
+        return `
+            <div class="project-graphic project-graphic-${variant} graphic-resume" aria-hidden="true">
+                <div class="resume-shell-graphic">
+                    <span class="resume-score">92% brain power used</span>
+                    <span class="resume-line resume-line-long"></span>
+                    <span class="resume-line"></span>
+                    <span class="resume-line resume-line-short"></span>
+                    <span class="resume-gap"></span>
+                    <span class="resume-check"></span>
+                </div>
+            </div>
+        `;
+    }
+
+    return `
+        <div class="project-graphic project-graphic-${variant} graphic-system" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </div>
+    `;
+};
+
 const renderFeaturedProjects = (projects = []) => {
     const grid = document.querySelector("[data-featured-projects]");
     if (!grid) return;
+
+    if (grid.classList.contains("project-showcase")) {
+        delete grid.dataset.carouselReady;
+        grid.innerHTML = projects.slice(0, 3).map((project, index) => `
+            <article class="showcase-slide${index === 0 ? " is-active" : ""}" data-carousel-slide>
+                <span class="showcase-number">${String(index + 1).padStart(2, "0")}</span>
+                <div class="showcase-copy">
+                    <p>${splitTags(project.tags).slice(0, 2).join(" / ") || "Featured"}</p>
+                    <h2>${project.title}</h2>
+                    <span>${project.description}</span>
+                </div>
+                ${renderProjectGraphic(project)}
+                <a href="${project.href}">Open Project</a>
+            </article>
+        `).join("");
+        return;
+    }
 
     grid.innerHTML = projects.slice(0, 3).map((project) => `
         <div class="project-card">
@@ -143,9 +223,11 @@ const applyContent = (content) => {
     document.querySelectorAll("[data-owner]").forEach((element) => {
         element.textContent = content.site.owner;
     });
+
+    document.dispatchEvent(new CustomEvent("portfolio:content-ready"));
 };
 
-fetch("content.json")
+fetch(`content.json?v=${Date.now()}`)
     .then((response) => response.json())
     .then(applyContent)
     .catch(() => {});
