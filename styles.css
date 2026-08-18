@@ -2637,6 +2637,199 @@ img {
     width: min(54%, 210px);
 }
 
+.lifeos-bento {
+    background:
+        radial-gradient(circle at 9% 18%, rgba(46, 232, 138, 0.13), transparent 24rem),
+        radial-gradient(circle at 88% 76%, rgba(255, 255, 255, 0.2), transparent 25rem),
+        linear-gradient(180deg, #eeeeee 0%, #e3e3e3 100%);
+}
+
+.lifeos-bento .lifeos-what,
+.lifeos-bento .lifeos-what.is-expanded {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+    background:
+        radial-gradient(circle at 10% 8%, rgba(46, 232, 138, 0.22), transparent 42%),
+        linear-gradient(145deg, #ffffff 0%, #f7fff9 100%);
+}
+
+.lifeos-bento .lifeos-what strong {
+    max-width: 10ch;
+    font-size: clamp(3rem, 4.5vw, 5rem);
+}
+
+.lifeos-bento .lifeos-why,
+.lifeos-bento .lifeos-why.is-expanded {
+    grid-column: 5 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.lifeos-bento .lifeos-build,
+.lifeos-bento .lifeos-build.is-expanded {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 3;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(46, 232, 138, 0.18), transparent 38%),
+        radial-gradient(circle at 100% 100%, rgba(61, 124, 255, 0.14), transparent 42%),
+        linear-gradient(145deg, #ffffff, #f9fbff);
+}
+
+.lifeos-bento .lifeos-visual {
+    grid-column: 5 / span 5;
+    grid-row: 3 / span 4;
+}
+
+.lifeos-bento .lifeos-views,
+.lifeos-bento .lifeos-views.is-expanded {
+    grid-column: 8 / span 2;
+    grid-row: 1 / span 2;
+    background:
+        radial-gradient(circle at 90% 8%, rgba(46, 232, 138, 0.3), transparent 42%),
+        #ffffff;
+}
+
+.lifeos-bento .lifeos-focus,
+.lifeos-bento .lifeos-focus.is-expanded {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 2;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(61, 124, 255, 0.16), transparent 42%),
+        #ffffff;
+}
+
+.lifeos-bento .lifeos-brain,
+.lifeos-bento .lifeos-brain.is-expanded {
+    grid-column: 10 / span 3;
+    grid-row: 3 / span 2;
+    background:
+        radial-gradient(circle at 85% 18%, rgba(46, 232, 138, 0.22), transparent 42%),
+        #ffffff;
+}
+
+.lifeos-bento .lifeos-backend,
+.lifeos-bento .lifeos-backend.is-expanded {
+    grid-column: 10 / span 3;
+    grid-row: 5 / span 2;
+    background:
+        radial-gradient(circle at 12% 10%, rgba(46, 232, 138, 0.22), transparent 42%),
+        radial-gradient(circle at 100% 88%, rgba(61, 124, 255, 0.14), transparent 40%),
+        linear-gradient(145deg, #ffffff, #f6fff9);
+}
+
+.lifeos-bento .lifeos-views strong,
+.lifeos-bento .lifeos-focus strong,
+.lifeos-bento .lifeos-brain strong,
+.lifeos-bento .lifeos-backend strong {
+    font-size: clamp(2.1rem, 3vw, 3.4rem);
+    line-height: 0.92;
+}
+
+.lifeos-bento .expand-bento-visual .project-graphic {
+    min-height: 100%;
+    border-radius: 14px;
+}
+
+.lifeos-bento .expand-bento-visual .dashboard-shell {
+    width: min(78%, 360px);
+}
+
+.resume-tailor-bento {
+    background:
+        radial-gradient(circle at 8% 18%, rgba(46, 232, 138, 0.12), transparent 24rem),
+        radial-gradient(circle at 90% 72%, rgba(245, 158, 11, 0.12), transparent 25rem),
+        linear-gradient(180deg, #eeeeee 0%, #e4e4e4 100%);
+}
+
+.resume-tailor-bento .resume-what,
+.resume-tailor-bento .resume-what.is-expanded {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+    background:
+        radial-gradient(circle at 10% 8%, rgba(46, 232, 138, 0.22), transparent 42%),
+        radial-gradient(circle at 90% 88%, rgba(245, 158, 11, 0.11), transparent 38%),
+        linear-gradient(145deg, #ffffff 0%, #fffdf8 100%);
+}
+
+.resume-tailor-bento .resume-what strong {
+    max-width: 10ch;
+    font-size: clamp(3rem, 4.5vw, 5rem);
+}
+
+.resume-tailor-bento .resume-why,
+.resume-tailor-bento .resume-why.is-expanded {
+    grid-column: 5 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.resume-tailor-bento .resume-build,
+.resume-tailor-bento .resume-build.is-expanded {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 3;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(46, 232, 138, 0.16), transparent 38%),
+        radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.16), transparent 42%),
+        linear-gradient(145deg, #ffffff, #fffaf0);
+}
+
+.resume-tailor-bento .resume-visual {
+    grid-column: 5 / span 5;
+    grid-row: 3 / span 4;
+}
+
+.resume-tailor-bento .resume-integrity,
+.resume-tailor-bento .resume-integrity.is-expanded {
+    grid-column: 8 / span 2;
+    grid-row: 1 / span 2;
+    background:
+        radial-gradient(circle at 90% 8%, rgba(46, 232, 138, 0.3), transparent 42%),
+        #ffffff;
+}
+
+.resume-tailor-bento .resume-feedback,
+.resume-tailor-bento .resume-feedback.is-expanded {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 2;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(245, 158, 11, 0.16), transparent 42%),
+        #ffffff;
+}
+
+.resume-tailor-bento .resume-studio,
+.resume-tailor-bento .resume-studio.is-expanded {
+    grid-column: 10 / span 3;
+    grid-row: 3 / span 2;
+    background:
+        radial-gradient(circle at 85% 18%, rgba(46, 232, 138, 0.2), transparent 42%),
+        #ffffff;
+}
+
+.resume-tailor-bento .resume-backend,
+.resume-tailor-bento .resume-backend.is-expanded {
+    grid-column: 10 / span 3;
+    grid-row: 5 / span 2;
+    background:
+        radial-gradient(circle at 12% 10%, rgba(46, 232, 138, 0.2), transparent 42%),
+        radial-gradient(circle at 100% 88%, rgba(245, 158, 11, 0.14), transparent 40%),
+        linear-gradient(145deg, #ffffff, #fffaf0);
+}
+
+.resume-tailor-bento .resume-integrity strong,
+.resume-tailor-bento .resume-feedback strong,
+.resume-tailor-bento .resume-studio strong,
+.resume-tailor-bento .resume-backend strong {
+    font-size: clamp(2.1rem, 3vw, 3.4rem);
+    line-height: 0.92;
+}
+
+.resume-tailor-bento .expand-bento-visual .project-graphic {
+    min-height: 100%;
+    border-radius: 14px;
+}
+
+.resume-tailor-bento .expand-bento-visual .resume-shell-graphic {
+    width: min(78%, 360px);
+}
+
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -3227,7 +3420,9 @@ body.resume-mode .resume-view {
         grid-template-columns: 1fr;
     }
 
-    .synapse-bento .expand-bento-grid {
+    .synapse-bento .expand-bento-grid,
+    .lifeos-bento .expand-bento-grid,
+    .resume-tailor-bento .expand-bento-grid {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
     }
@@ -3245,7 +3440,25 @@ body.resume-mode .resume-view {
     .synapse-bento .synapse-tracking,
     .synapse-bento .synapse-platform,
     .synapse-bento .synapse-backend,
-    .synapse-bento .expand-bento-card.is-expanded {
+    .synapse-bento .expand-bento-card.is-expanded,
+    .lifeos-bento .lifeos-what,
+    .lifeos-bento .lifeos-why,
+    .lifeos-bento .lifeos-build,
+    .lifeos-bento .lifeos-visual,
+    .lifeos-bento .lifeos-views,
+    .lifeos-bento .lifeos-focus,
+    .lifeos-bento .lifeos-brain,
+    .lifeos-bento .lifeos-backend,
+    .lifeos-bento .expand-bento-card.is-expanded,
+    .resume-tailor-bento .resume-what,
+    .resume-tailor-bento .resume-why,
+    .resume-tailor-bento .resume-build,
+    .resume-tailor-bento .resume-visual,
+    .resume-tailor-bento .resume-integrity,
+    .resume-tailor-bento .resume-feedback,
+    .resume-tailor-bento .resume-studio,
+    .resume-tailor-bento .resume-backend,
+    .resume-tailor-bento .expand-bento-card.is-expanded {
         grid-column: 1;
         grid-row: auto;
     }

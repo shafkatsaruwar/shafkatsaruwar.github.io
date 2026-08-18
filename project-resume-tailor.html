@@ -62,18 +62,40 @@
             </article>
         </section>
 
-        <section class="project-detail-bento" aria-label="Resume Tailor AI feature overview">
+        <section class="project-detail-bento synapse-bento resume-tailor-bento" aria-label="Resume Tailor AI feature overview">
             <div class="detail-bento-heading">
                 <h2>Resume Tailor feature map</h2>
-                <p>AI resume help with a strict “do not make me sound like I invented Kubernetes” policy.</p>
+                <p>Resume + job description in. Honest tailored resume, recruiter feedback, and clean export out.</p>
             </div>
-            <div class="detail-bento-grid">
-                <article class="detail-bento-card detail-bento-hero">
-                    <span>Tailoring Engine</span>
-                    <strong>92%</strong>
-                    <p>brain power used. Compares resumes to job descriptions and improves alignment honestly.</p>
-                </article>
-                <article class="detail-bento-card detail-bento-graphic">
+
+            <div class="expand-bento-grid" data-expand-bento>
+                <button class="expand-bento-card expand-bento-large resume-what is-expanded" type="button" aria-expanded="true">
+                    <span>Overview</span>
+                    <strong>Honest resume tailoring</strong>
+                    <p>Resume + JD, rewritten without fake skills.</p>
+                    <div class="bento-feature-pills" aria-hidden="true">
+                        <i>Parser</i>
+                        <i>Tailor</i>
+                        <i>Export</i>
+                    </div>
+                    <em>Resume Tailor AI analyzes a resume against a target job description, mirrors role terminology, tightens bullet structure, and keeps gaps separate instead of pretending they are experience.</em>
+                </button>
+
+                <button class="expand-bento-card resume-why" type="button" aria-expanded="false">
+                    <span>Why</span>
+                    <strong>0% fake sauce</strong>
+                    <p>Gaps get flagged, not invented.</p>
+                    <em>Most AI resume tools start freelancing with your career. This one keeps the tailoring useful without crossing into fantasy resume land.</em>
+                </button>
+
+                <button class="expand-bento-card expand-bento-tall resume-build" type="button" aria-expanded="false">
+                    <span>Build</span>
+                    <strong>AI studio</strong>
+                    <p>React, Express, Gemini, Firebase.</p>
+                    <em>Built with React 19, TypeScript, Tailwind CSS v4, Motion, Vite, Node/Express, Helmet CSP, rate limiting, Firebase Auth, Firestore, LocalStorage, and Gemini structured JSON output.</em>
+                </button>
+
+                <div class="expand-bento-card expand-bento-visual resume-visual" aria-label="Resume Tailor AI graphic">
                     <div class="project-graphic project-graphic-index graphic-resume" aria-hidden="true">
                         <div class="resume-shell-graphic">
                             <span class="resume-score">92% brain power used</span>
@@ -84,27 +106,35 @@
                             <span class="resume-check"></span>
                         </div>
                     </div>
-                </article>
-                <article class="detail-bento-card">
+                </div>
+
+                <button class="expand-bento-card resume-integrity" type="button" aria-expanded="false">
                     <span>Integrity</span>
-                    <strong>0%</strong>
-                    <p>fabricated skills. Gaps get flagged separately instead of magically becoming “experience.”</p>
-                </article>
-                <article class="detail-bento-card">
-                    <span>Recruiter Mode</span>
+                    <strong>No lies</strong>
+                    <p>Strict no-fabrication rules.</p>
+                    <em>Missing requirements show up in gap analysis instead of getting quietly stuffed into the resume like nobody will notice.</em>
+                </button>
+
+                <button class="expand-bento-card resume-feedback" type="button" aria-expanded="false">
+                    <span>Recruiter</span>
                     <strong>Straight talk</strong>
-                    <p>Weak bullets, stretch warnings, missing JD requirements, and alignment feedback.</p>
-                </article>
-                <article class="detail-bento-card">
+                    <p>Weak bullets, warnings, gaps.</p>
+                    <em>The feedback calls out weak bullets, stretch claims, missing JD requirements, and where the resume is under-selling real work.</em>
+                </button>
+
+                <button class="expand-bento-card resume-studio" type="button" aria-expanded="false">
                     <span>Studio</span>
                     <strong>Live preview</strong>
-                    <p>Templates, typography controls, dark navy mode, JSON backup, and print-to-PDF.</p>
-                </article>
-                <article class="detail-bento-card">
+                    <p>Templates, type, PDF, backups.</p>
+                    <em>Includes real-time resume rendering, layout styles, typography controls, dark navy mode, print-to-PDF, JSON import/export, and keyboard shortcuts.</em>
+                </button>
+
+                <button class="expand-bento-card resume-backend" type="button" aria-expanded="false">
                     <span>Stack</span>
-                    <strong>Gemini + Firebase</strong>
-                    <p>Node/Express API, Helmet CSP, rate limiting, Auth, Firestore, and LocalStorage autosave.</p>
-                </article>
+                    <strong>Gemini + Firestore</strong>
+                    <p>AI output + saved sessions.</p>
+                    <em>The backend protects AI requests, while Firestore and LocalStorage keep profiles, resumes, tailoring history, and drafts from disappearing into the void.</em>
+                </button>
             </div>
         </section>
     </main>

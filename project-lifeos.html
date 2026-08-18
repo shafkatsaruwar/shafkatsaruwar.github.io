@@ -62,18 +62,40 @@
             </article>
         </section>
 
-        <section class="project-detail-bento" aria-label="LifeOS feature overview">
+        <section class="project-detail-bento synapse-bento lifeos-bento" aria-label="LifeOS feature overview">
             <div class="detail-bento-heading">
                 <h2>LifeOS feature map</h2>
-                <p>A personal command center for when your brain has 47 tabs open and one of them is playing music.</p>
+                <p>Priorities, focus, tasks, calendar, notes, and brain capture in one personal command center.</p>
             </div>
-            <div class="detail-bento-grid">
-                <article class="detail-bento-card detail-bento-hero">
-                    <span>System Status</span>
-                    <strong>90%</strong>
-                    <p>life together. Not legally binding, but the dashboard helps.</p>
-                </article>
-                <article class="detail-bento-card detail-bento-graphic">
+
+            <div class="expand-bento-grid" data-expand-bento>
+                <button class="expand-bento-card expand-bento-large lifeos-what is-expanded" type="button" aria-expanded="true">
+                    <span>Overview</span>
+                    <strong>Personal command center</strong>
+                    <p>Now, Today, Spaces, Tasks, Notes, Brain.</p>
+                    <div class="bento-feature-pills" aria-hidden="true">
+                        <i>Focus</i>
+                        <i>Tasks</i>
+                        <i>Brain</i>
+                    </div>
+                    <em>LifeOS turns scattered priorities, notes, tasks, resources, and calendar context into one modular dashboard instead of eight tabs and a prayer.</em>
+                </button>
+
+                <button class="expand-bento-card lifeos-why" type="button" aria-expanded="false">
+                    <span>Why</span>
+                    <strong>Less tab panic</strong>
+                    <p>Clear priorities before chaos wins.</p>
+                    <em>It makes the next best thing visible, so planning does not depend on remembering every floating thought at once.</em>
+                </button>
+
+                <button class="expand-bento-card expand-bento-tall lifeos-build" type="button" aria-expanded="false">
+                    <span>Build</span>
+                    <strong>Web + desktop</strong>
+                    <p>Next.js, React 19, Firebase, Tauri.</p>
+                    <em>Includes Now, Today, Spaces, Tasks, Calendar, Notes, Brain, Knowledge, Resources, focus sessions, keyboard shortcuts, and native macOS packaging.</em>
+                </button>
+
+                <div class="expand-bento-card expand-bento-visual lifeos-visual" aria-label="LifeOS dashboard graphic">
                     <div class="project-graphic project-graphic-index graphic-lifeos" aria-hidden="true">
                         <div class="dashboard-shell">
                             <span class="joke-score">90% life together</span>
@@ -85,27 +107,35 @@
                             <span class="dash-line"></span>
                         </div>
                     </div>
-                </article>
-                <article class="detail-bento-card">
+                </div>
+
+                <button class="expand-bento-card lifeos-views" type="button" aria-expanded="false">
                     <span>Views</span>
                     <strong>Now + Today</strong>
-                    <p>Priority views for the work that matters before the day starts throwing objects.</p>
-                </article>
-                <article class="detail-bento-card">
+                    <p>Daily priorities, not a fog machine.</p>
+                    <em>Priority views keep urgent work, planned work, and today context close enough to actually use.</em>
+                </button>
+
+                <button class="expand-bento-card lifeos-focus" type="button" aria-expanded="false">
                     <span>Focus</span>
                     <strong>Sessions</strong>
-                    <p>Focus mode, break prompts, floating resume dock, and keyboard shortcuts.</p>
-                </article>
-                <article class="detail-bento-card">
-                    <span>Brain Capture</span>
-                    <strong>Notes + Knowledge</strong>
-                    <p>Personal context, notes, resources, and thinking space without app-hopping.</p>
-                </article>
-                <article class="detail-bento-card">
-                    <span>Persistence</span>
+                    <p>Timer, breaks, resume dock.</p>
+                    <em>Focus mode supports sessions, break prompts, floating resume controls, and keyboard shortcuts for getting back into work fast.</em>
+                </button>
+
+                <button class="expand-bento-card lifeos-brain" type="button" aria-expanded="false">
+                    <span>Capture</span>
+                    <strong>Brain dump</strong>
+                    <p>Notes, knowledge, resources.</p>
+                    <em>Personal context gets a home so ideas stop living in random notes, screenshots, and “I swear I wrote this down” moments.</em>
+                </button>
+
+                <button class="expand-bento-card lifeos-backend" type="button" aria-expanded="false">
+                    <span>Backend</span>
                     <strong>Firebase</strong>
-                    <p>Cloud-backed state with local/offline-friendly behavior and Tauri packaging.</p>
-                </article>
+                    <p>Cloud-backed app state.</p>
+                    <em>Firebase persistence keeps the command center synced while the interface stays local/offline-friendly where it matters.</em>
+                </button>
             </div>
         </section>
     </main>
