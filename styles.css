@@ -344,20 +344,22 @@ img {
     position: absolute;
     top: clamp(0.9rem, 4.5vw, 2.8rem);
     left: 50%;
-    width: 100vw;
+    width: min(100vw - 2rem, 1280px);
     transform: translateX(-50%);
     text-align: center;
     color: transparent;
     background: var(--headline);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: clamp(5.2rem, 10.8vw, 11.6rem);
+    font-size: clamp(4.8rem, 9.8vw, 10.9rem);
     font-weight: 950;
-    line-height: 0.72;
+    line-height: 0.9;
     letter-spacing: 0;
     text-transform: uppercase;
     text-wrap: balance;
     white-space: nowrap;
+    padding-bottom: 0.1em;
+    overflow: visible;
     opacity: 0;
     animation: headlineReveal 1s var(--ease-out) 0.16s forwards;
 }
@@ -366,8 +368,9 @@ img {
     grid-column: 2;
     grid-row: 1 / 4;
     position: relative;
-    align-self: end;
+    align-self: start;
     justify-self: center;
+    margin-top: clamp(8.5rem, 13.2vw, 13rem);
     width: min(48vw, 570px);
     max-height: 72vh;
     aspect-ratio: auto;
@@ -1236,17 +1239,28 @@ img {
 }
 
 .education-card {
-    max-width: 860px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+    gap: clamp(1.1rem, 4vw, 3rem);
+    align-items: stretch;
+    max-width: 1050px;
     margin-left: auto;
     padding: clamp(1.5rem, 4vw, 3rem);
     border: 1px solid var(--line);
     border-radius: 8px;
     background:
-        radial-gradient(circle at 0% 0%, rgba(61, 124, 255, 0.12), transparent 22rem),
+        radial-gradient(circle at 0% 0%, rgba(46, 232, 138, 0.12), transparent 21rem),
+        radial-gradient(circle at 95% 85%, rgba(61, 124, 255, 0.12), transparent 24rem),
         linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
 }
 
-.education-card span {
+.education-main,
+.education-facts {
+    min-width: 0;
+}
+
+.education-card span,
+.education-facts span {
     color: var(--muted);
     text-transform: uppercase;
     font-size: 0.82rem;
@@ -1257,7 +1271,7 @@ img {
 .education-card h2 {
     margin: 0.55rem 0 1rem;
     color: var(--ink);
-    font-size: clamp(2.4rem, 6vw, 5rem);
+    font-size: clamp(2.4rem, 5.8vw, 5.6rem);
     font-weight: 950;
     line-height: 0.9;
     text-transform: uppercase;
@@ -1269,8 +1283,33 @@ img {
     font-size: 1rem;
 }
 
-.education-card p + p {
-    margin-top: 0.7rem;
+.education-facts {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.education-facts div {
+    display: grid;
+    gap: 0.45rem;
+    min-height: 118px;
+    align-content: space-between;
+    padding: clamp(0.9rem, 2vw, 1.2rem);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.education-facts strong {
+    color: var(--ink);
+    font-size: clamp(2.2rem, 4vw, 4.4rem);
+    font-weight: 950;
+    line-height: 0.82;
+}
+
+.education-facts p {
+    font-size: 0.94rem;
+    font-weight: 800;
+    line-height: 1.35;
 }
 
 .contact-hero {
@@ -1810,6 +1849,34 @@ img {
     display: grid;
     gap: 1rem;
     padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.featured-projects-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: clamp(1rem, 3vw, 1.8rem);
+    padding-inline: clamp(0.1rem, 1vw, 0.4rem);
+}
+
+.featured-projects-heading span {
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 950;
+    letter-spacing: 0.14em;
+}
+
+.featured-projects-heading h2 {
+    max-width: 760px;
+    color: var(--ink);
+    text-align: right;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 5vw, 4.8rem);
+    font-weight: 950;
+    line-height: 0.88;
+    letter-spacing: 0;
 }
 
 .project-teaser {
@@ -2364,8 +2431,30 @@ img {
     box-shadow: none;
 }
 
+.synapse-bento,
+.synapse-bento button {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
 .synapse-bento .detail-bento-heading {
+    max-width: min(980px, 100%);
     margin-bottom: clamp(1.1rem, 3vw, 1.7rem);
+}
+
+.synapse-bento .detail-bento-heading h2 {
+    font-family: inherit;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 950;
+    line-height: 0.86;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.synapse-bento .detail-bento-heading p {
+    font-family: inherit;
+    font-size: clamp(1rem, 1.55vw, 1.25rem);
+    font-weight: 850;
 }
 
 .synapse-bento .expand-bento-grid {
@@ -2379,10 +2468,18 @@ img {
     min-height: auto;
     border-radius: 22px;
     border-color: rgba(5, 5, 5, 0.05);
+    font-family: inherit;
     background:
         radial-gradient(circle at 18% 0%, rgba(46, 232, 138, 0.11), transparent 44%),
         linear-gradient(145deg, #ffffff, #fbfbfb);
     box-shadow: 0 16px 46px rgba(0, 0, 0, 0.055);
+}
+
+.synapse-bento .expand-bento-card span,
+.synapse-bento .expand-bento-card strong,
+.synapse-bento .expand-bento-card p,
+.synapse-bento .expand-bento-card em {
+    font-family: inherit;
 }
 
 .synapse-bento .expand-bento-card strong {
@@ -3035,6 +3132,8 @@ body.resume-mode .resume-view {
     .hero-avatar {
         grid-column: 1;
         grid-row: 1 / 4;
+        align-self: start;
+        margin-top: clamp(10rem, 24vw, 14rem);
         width: min(78vw, 520px);
     }
 
@@ -3052,12 +3151,26 @@ body.resume-mode .resume-view {
 
     .about-panel,
     .experience-list article,
+    .education-card,
     .project-teaser,
     .project-detail-hero,
     .project-detail-grid,
     .about-roast-grid,
     .detail-bento-grid,
     .mini-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-projects-heading {
+        display: grid;
+        align-items: start;
+    }
+
+    .featured-projects-heading h2 {
+        text-align: left;
+    }
+
+    .education-facts {
         grid-template-columns: 1fr;
     }
 
@@ -3202,11 +3315,12 @@ body.resume-mode .resume-view {
         top: 4.9rem;
         font-size: clamp(2.75rem, 11.3vw, 4.2rem);
         white-space: normal;
-        line-height: 0.82;
+        line-height: 0.92;
         transform: translateX(-50%);
     }
 
     .hero-avatar {
+        margin-top: clamp(9rem, 29vw, 12rem);
         width: min(91vw, 430px);
         max-height: 64vh;
         transform: none;
@@ -3485,6 +3599,7 @@ body.resume-mode .resume-view {
     }
 
     .hero-avatar {
+        margin-top: clamp(8rem, 34vw, 10rem);
         width: min(96vw, 380px);
         max-height: 58vh;
     }
