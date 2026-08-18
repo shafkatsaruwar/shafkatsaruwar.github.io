@@ -2483,11 +2483,15 @@ img {
 }
 
 .synapse-bento .expand-bento-card strong {
-    font-size: clamp(1.55rem, 2.7vw, 2.75rem);
+    font-size: clamp(1.9rem, 3vw, 3.25rem);
+    max-width: 11ch;
 }
 
 .synapse-bento .expand-bento-card p {
-    font-size: 0.94rem;
+    max-width: 25ch;
+    font-size: clamp(0.95rem, 1.05vw, 1.08rem);
+    font-weight: 850;
+    line-height: 1.22;
 }
 
 .synapse-bento .expand-bento-card.is-expanded {
@@ -2513,7 +2517,30 @@ img {
 }
 
 .synapse-bento .synapse-what strong {
-    font-size: clamp(2.45rem, 4vw, 4.2rem);
+    max-width: 10ch;
+    font-size: clamp(3rem, 4.5vw, 5rem);
+}
+
+.bento-feature-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.bento-feature-pills i {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0.35rem 0.65rem;
+    color: rgba(5, 5, 5, 0.74);
+    border: 1px solid rgba(5, 5, 5, 0.08);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.62);
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 950;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .synapse-bento .synapse-why,
@@ -2568,11 +2595,12 @@ img {
 .synapse-bento .synapse-backend.is-expanded {
     grid-column: 10 / span 3;
     grid-row: 5 / span 2;
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #050505;
+    border-color: rgba(5, 5, 5, 0.055);
     background:
-        radial-gradient(circle at 0% 0%, rgba(46, 232, 138, 0.3), transparent 44%),
-        linear-gradient(145deg, #111a16, #050505);
+        radial-gradient(circle at 12% 10%, rgba(46, 232, 138, 0.24), transparent 42%),
+        radial-gradient(circle at 100% 88%, rgba(61, 124, 255, 0.14), transparent 40%),
+        linear-gradient(145deg, #ffffff, #f6fff9);
 }
 
 .synapse-bento .synapse-backend span,
@@ -2585,7 +2613,7 @@ img {
 .synapse-bento .synapse-backend span,
 .synapse-bento .synapse-backend p,
 .synapse-bento .synapse-backend em {
-    opacity: 0.72;
+    opacity: 0.68;
 }
 
 .synapse-bento .synapse-backend:not(.is-expanded) em {
@@ -2596,7 +2624,7 @@ img {
 .synapse-bento .synapse-tracking strong,
 .synapse-bento .synapse-platform strong,
 .synapse-bento .synapse-backend strong {
-    font-size: clamp(1.65rem, 2.55vw, 2.55rem);
+    font-size: clamp(2.1rem, 3vw, 3.4rem);
     line-height: 0.92;
 }
 
