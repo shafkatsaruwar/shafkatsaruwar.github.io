@@ -1238,13 +1238,16 @@ img {
     font-size: clamp(1.8rem, 4vw, 3.8rem);
 }
 
+.education-panel {
+    padding-top: clamp(3.5rem, 7vw, 6rem);
+}
+
 .education-card {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
     gap: clamp(1.1rem, 4vw, 3rem);
     align-items: stretch;
-    max-width: 1050px;
-    margin-left: auto;
+    width: 100%;
     padding: clamp(1.5rem, 4vw, 3rem);
     border: 1px solid var(--line);
     border-radius: 8px;
